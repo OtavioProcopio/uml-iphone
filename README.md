@@ -26,30 +26,31 @@ O projeto é baseado em três interfaces que representam os papéis do iPhone e 
 
 ### **Diagrama de Classes UML**
 A estrutura básica segue este modelo:
-+------------------+
 
++------------------+
 MusicalPlayer
 + play()
 + pause()
 + nextTrack()
 + previousTrack()
 +------------------+
+  
 +------------------+
-
 Telephone
 + makeCall()
 + receiveCall()
 + endCall()
 +------------------+
+  
 +------------------+
-
 WebBrowser
 + openPage()
 + search()
 + navigate()
 +------------------+
-+------------------+
 
+  
++------------------+
 iPhone
 Implements:
 MusicalPlayer,
