@@ -1,18 +1,65 @@
-## Getting Started
+# 📱 iPhone UML Model
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório apresenta a modelagem e implementação das funcionalidades básicas do iPhone, incluindo reprodutor musical, telefone e navegador de internet. O projeto utiliza UML para a concepção e foi implementado em Java como parte de um desafio de programação orientada a objetos.
 
-## Folder Structure
+## 🚀 Funcionalidades
 
-The workspace contains two folders by default, where:
+- **Reprodutor Musical**: 
+  - Tocar música.
+  - Pausar música.
+  - Avançar para a próxima faixa.
+  - Retornar para a faixa anterior.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Telefone**: 
+  - Fazer chamadas.
+  - Receber chamadas.
+  - Finalizar chamadas.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Navegador de Internet**: 
+  - Abrir páginas web.
+  - Realizar buscas.
+  - Navegar entre páginas (avançar ou voltar).
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🛠️ Estrutura do Projeto
 
-## Dependency Management
+O projeto é baseado em três interfaces que representam os papéis do iPhone e uma classe principal que implementa todas as interfaces.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### **Diagrama de Classes UML**
+A estrutura básica segue este modelo:
++------------------+
+
+MusicalPlayer
++ play()
++ pause()
++ nextTrack()
++ previousTrack()
++------------------+
++------------------+
+
+Telephone
++ makeCall()
++ receiveCall()
++ endCall()
++------------------+
++------------------+
+
+WebBrowser
++ openPage()
++ search()
++ navigate()
++------------------+
++------------------+
+
+iPhone
+Implements:
+MusicalPlayer,
+Telephone,
+WebBrowser
++------------------+
+
+
+### Arquivos do Projeto
+- **`MusicalPlayer.java`**: Define a interface para as funções de reprodução musical.
+- **`Telephone.java`**: Define a interface para as funções telefônicas.
+- **`WebBrowser.java`**: Define a interface para as funções de navegação na internet.
+- **`iPhone.java`**: Implementa todas as interfaces e contém o método principal para testes.
