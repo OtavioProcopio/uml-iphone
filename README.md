@@ -33,6 +33,7 @@ MusicalPlayer
 + pause()
 + nextTrack()
 + previousTrack()
++
 +------------------+
   
 +------------------+
@@ -40,6 +41,7 @@ Telephone
 + makeCall()
 + receiveCall()
 + endCall()
++ 
 +------------------+
   
 +------------------+
@@ -47,15 +49,18 @@ WebBrowser
 + openPage()
 + search()
 + navigate()
++ 
 +------------------+
 
   
 +------------------+
+
 iPhone
 Implements:
 MusicalPlayer,
 Telephone,
 WebBrowser
+
 +------------------+
 
 
